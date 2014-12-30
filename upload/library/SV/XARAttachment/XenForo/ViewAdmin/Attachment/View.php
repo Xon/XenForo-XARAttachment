@@ -30,7 +30,12 @@ class SV_XARAttachment_XenForo_ViewAdmin_Attachment_View extends XFCP_SV_XARAtta
 		$this->_response->setHeader('Content-Length', $attachment['file_size'], true);
 		$this->_response->setHeader('X-Content-Type-Options', 'nosniff');
 
-        $this->_response->setHeader('X-Accel-Redirect', str_replace(XenForo_Application::getInstance()->getRootDir(),'', $this->_params['attachmentFile']));
-        return '';
+        $attachmentFile = $this->_params['attachmentFile'];
+        if (SV_XARAttachment_AttachmentHelper::ConvertFilename($attachmentFile))
+        {        
+            $this->_response->setHeader('X-Accel-Redirect', $attachmentFile);
+            return '';
+        }        
+		return new XenForo_FileOutput($this->_params['attachmentFile']);
 	}
 }
