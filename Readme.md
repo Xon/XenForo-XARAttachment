@@ -3,7 +3,7 @@ Xenforo-SVXARAttachment
 
 Enables the use of Nginx's X-Accel-Redirect header feature for attachment serving.
 
-This permits XenForo to-do validation and authentication, and offload the actual file serving to Nginx. Not particularly well documented, but some info found here; http://wiki.nginx.org/X-accel
+This permits XenForo to-do validation and authentication, and offload the actual file serving to Nginx. This feature is not particularly well documented, but some info found here; http://wiki.nginx.org/X-accel
 
 As XenForo_FileOutput is not extensible, this addon reimplements:
 - XenForo_ViewAdmin_Attachment_View
