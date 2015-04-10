@@ -39,8 +39,16 @@ class SV_XARAttachment_XenForo_ViewAdmin_Attachment_View extends XFCP_SV_XARAtta
         $attachmentFile = $this->_params['attachmentFile'];
         if (SV_XARAttachment_AttachmentHelper::ConvertFilename($attachmentFile))
         {
+            if (XenForo_Application::debugMode() && XenForo_Application::getOptions()->sv_xar_log)
+            {
+                XenForo_Error::debug('X-Accel-Redirect:' . $attachmentFile);
+            }
             $this->_response->setHeader('X-Accel-Redirect', $attachmentFile);
             return '';
+        }
+        if (XenForo_Application::debugMode() && XenForo_Application::getOptions()->sv_xar_log)
+        {
+            XenForo_Error::debug('X-Accel-Redirect skipped');
         }
         return new XenForo_FileOutput($this->_params['attachmentFile']);
     }
