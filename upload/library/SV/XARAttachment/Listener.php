@@ -2,16 +2,10 @@
 
 class SV_XARAttachment_Listener
 {
+    const AddonNameSpace = 'SV_XARAttachment';
+
     public static function load_class($class, array &$extend)
     {
-        switch($class)
-        {
-            case 'XenForo_ViewAdmin_Attachment_View':
-                $extend[] = 'SV_XARAttachment_XenForo_ViewAdmin_Attachment_View';
-                break;
-            case 'XenForo_ViewPublic_Attachment_View':
-                $extend[] = 'SV_XARAttachment_XenForo_ViewPublic_Attachment_View';
-                break;                
-        }
+        $extend[] = self::AddonNameSpace.'_'.$class;
     }
 }
