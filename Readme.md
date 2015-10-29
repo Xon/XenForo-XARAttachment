@@ -1,5 +1,4 @@
-Xenforo-XARAttachment
-======================
+#Xenforo-XARAttachment
 
 Enables the use of Nginx's X-Accel-Redirect header feature for attachment serving.
 
