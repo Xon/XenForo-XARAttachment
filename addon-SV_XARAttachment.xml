@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="SV_XARAttachment" title="Nginx - XAccelRedirect - Attachments" version_string="1.0.2" version_id="1428656112" url="https://xenforo.com/community/resources/xar-attachment.3917/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="SV_XARAttachment" title="Nginx - XAccelRedirect - Attachments" version_string="1.0.2a" version_id="1000201" url="https://xenforo.com/community/resources/xar-attachment.3917/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -29,10 +29,10 @@
     <interface_groups/>
   </permissions>
   <phrases>
-    <phrase title="option_group_sv_xar_debug" version_id="1428656112" version_string="1.0.2"><![CDATA[Nginx XAccelRedirect Debug Options]]></phrase>
-    <phrase title="option_group_sv_xar_debug_description" version_id="1428656112" version_string="1.0.2"><![CDATA[]]></phrase>
-    <phrase title="option_sv_xar_log" version_id="1428656112" version_string="1.0.2"><![CDATA[Log Attachment Redirection URLs]]></phrase>
-    <phrase title="option_sv_xar_log_explain" version_id="1428656112" version_string="1.0.2"><![CDATA[Allows debugging of the attachment redirection URLs]]></phrase>
+    <phrase title="option_group_sv_xar_debug" version_id="1000200" version_string="1.0.2"><![CDATA[Nginx XAccelRedirect Debug Options]]></phrase>
+    <phrase title="option_group_sv_xar_debug_description" version_id="1000200" version_string="1.0.2"><![CDATA[]]></phrase>
+    <phrase title="option_sv_xar_log" version_id="1000200" version_string="1.0.2"><![CDATA[Log Attachment Redirection URLs]]></phrase>
+    <phrase title="option_sv_xar_log_explain" version_id="1000200" version_string="1.0.2"><![CDATA[Allows debugging of the attachment redirection URLs]]></phrase>
   </phrases>
   <route_prefixes/>
   <style_properties/>
